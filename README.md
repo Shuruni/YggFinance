@@ -2,8 +2,6 @@
 
 ## Introduction: What is YggFinance?
 
-YggFinance is a personal finance focused Web Application providing a hanful of tools to aid users in various areas of personal finance.
-
 YggFinance aims to help our end users gain a better grasp on three major areas of their personal finance ー Monthly Budgeting, Savings Planning, and Net Worth Tracking. YggFinance offers tools for each of these categories that aim to make it easier for our end users to track personal spending trends, to compare strategies for personal savings goals, and to gain insight into their current net worth.
 
 ## Technologies and Concepts
