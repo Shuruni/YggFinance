@@ -4,21 +4,39 @@
 
 YggFinance aims to help our end users gain a better grasp on three major areas of their personal finance ー Monthly Budgeting, Savings Planning, and Net Worth Tracking. YggFinance offers tools for each of these categories that aim to make it easier for our end users to track personal spending trends, to compare strategies for personal savings goals, and to gain insight into their current net worth.
 
-## Technologies and Concepts
+## Project Proposal
+
+See our [Project Proposal](https://docs.google.com/document/d/1nkHFe5301lCNpXaoW17DRWBJwUDSga3-ieydW12w5K4/edit) Google Docs for the most up to date version.
+
+Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Proposal.pdf).
+
+## Project Schedule
+
+See our [Project Schedule](https://docs.google.com/spreadsheets/d/1z0qx8BHvJfu07h4-Id_6jOLh6xy1ZivX3l5OgTq2Dmk/edit) Google Sheets for the most up to date version.
+
+## Technologies
+
+### Concepts
 
 - Containerization
 - Microservices pattern
+- Web Application
+- Local Storage
+- Stateless Server
+- RESTful Services
+
+### Deployment
+
 - Docker
 - Docker Networks
-- Web Application
-- (Client Side) Local Storage
-- Stateless Server
 - Home Linux Server / Amazon Web Services (AWS)
-- REST Request Paradigm
+
+### Communication Standard
+
 - HTTP Request Type
 - JSON Message Format
 
-## Development Tools
+### Development Environments
 
 - Netbeans
 - Java
@@ -33,14 +51,14 @@ YggFinance aims to help our end users gain a better grasp on three major areas o
 - Windows 10
 - Linux (Manjaro/Mint/CentOS)
 
-## Design/Documentation Tools
+### Design/Documentation Tools
 
 - Google Docs/Slides/Sheets
 - Libre Office
 - Microsoft Office
 - [app.diagrams.net](app.diagrams.net)
 
-## Team Communication Platforms
+### Team Communication Platforms
 
 - Discord
 - Zoom
@@ -58,23 +76,17 @@ YggFinance aims to help our end users gain a better grasp on three major areas o
 8. The project must be completed and deployed by ~May 5 (~3 months).
 9. The project must utilize Git and Github for version control.
 
-## Project Proposal
+## Project  Requirements
 
-See our [Project Proposal](https://docs.google.com/document/d/1nkHFe5301lCNpXaoW17DRWBJwUDSga3-ieydW12w5K4/edit) Google Docs for the most up to date version
+See our [Requirements Document](https://docs.google.com/document/d/183tJPdbQjW1SCaJoEjVqWTh_mHdAAX0H52b6hTXzoHs/edit) Google Docs for the most up to date version.
 
-Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Proposal.pdf)
+Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Requirements.pdf).
 
-## Requirements
+## Project Design
 
-See our [Requirements Document](https://docs.google.com/document/d/183tJPdbQjW1SCaJoEjVqWTh_mHdAAX0H52b6hTXzoHs/edit) Google Docs for the most up to date version
+See our [Design Document](https://docs.google.com/document/d/1Vj44aKO45-_g5VRWgHCZUrLQVt4fGv64gFORrzaFDCY/edit) Google Docs for the most up to date version.
 
-Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Requirements.pdf)
-
-## Design
-
-See our [Design Document](https://docs.google.com/document/d/1Vj44aKO45-_g5VRWgHCZUrLQVt4fGv64gFORrzaFDCY/edit) Google Docs for the most up to date version
-
-Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Design.pdf)
+Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Design.pdf).
 
 For a short functional overview of where our technologies apply, see the table below:
 
