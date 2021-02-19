@@ -33,6 +33,13 @@ YggFinance aims to help our end users gain a better grasp on three major areas o
 - Windows 10
 - Linux (Manjaro/Mint/CentOS)
 
+## Design/Documentation Tools
+
+- Google Docs/Slides/Sheets
+- Libre Office
+- Microsoft Office
+- [app.diagrams.net](app.diagrams.net)
+
 ## Team Communication Platforms
 
 - Discord
@@ -53,15 +60,21 @@ YggFinance aims to help our end users gain a better grasp on three major areas o
 
 ## Project Proposal
 
-See our [Project Proposal](documentation/Proposal-GoogleDocs.url)
+See our [Project Proposal](https://docs.google.com/document/d/1nkHFe5301lCNpXaoW17DRWBJwUDSga3-ieydW12w5K4/edit) Google Docs for the most up to date version
+
+Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Proposal.pdf)
 
 ## Requirements
 
-See our [Requirements Document](documentation/Requirements-GoogleDocs.url)
+See our [Requirements Document](https://docs.google.com/document/d/183tJPdbQjW1SCaJoEjVqWTh_mHdAAX0H52b6hTXzoHs/edit) Google Docs for the most up to date version
+
+Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Requirements.pdf)
 
 ## Design
 
-See our [Design Document](documentation/Design-GoogleDocs.url)
+See our [Design Document](https://docs.google.com/document/d/1Vj44aKO45-_g5VRWgHCZUrLQVt4fGv64gFORrzaFDCY/edit) Google Docs for the most up to date version
+
+Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Design.pdf)
 
 For a short functional overview of where our technologies apply, see the table below:
 
