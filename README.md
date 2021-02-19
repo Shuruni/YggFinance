@@ -2,113 +2,102 @@
 
 ## Introduction: What is YggFinance?
 
-`Short Description of our program`
+YggFinance is a personal finance focused Web Application providing a hanful of tools to aid users in various areas of personal finance.
 
-## Implemented Technologies and Concepts
+YggFinance aims to help our end users gain a better grasp on three major areas of their personal finance ー Monthly Budgeting, Savings Planning, and Net Worth Tracking. YggFinance offers tools for each of these categories that aim to make it easier for our end users to track personal spending trends, to compare strategies for personal savings goals, and to gain insight into their current net worth.
 
+## Technologies and Concepts
+
+- Containerization
 - Microservices pattern
-- CQRS
-- Event Bus
-- Event Store
-- Database per Service
-- Event Broker Pattern
-- Saga - Choreography
-- Reverse Proxy
-- VPN Gateway
-- Firewall
-- RESTful services
-- Java
-- Python
-- Node.js
-- VSCode
-- Git
 - Docker
-- `etc. add as we decide`
+- Docker Networks
+- Web Application
+- (Client Side) Local Storage
+- Stateless Server
+- Home Linux Server / Amazon Web Services (AWS)
+- REST Request Paradigm
+- HTTP Request Type
+- JSON Message Format
 
-## Program Constraints
+## Development Tools
 
-1. The project must be completed and deployed by ~May 5 (~3 months).
-2. The project must utilize Git and Github for version control.
-3. The program should incorporate new technologies.
-4. `etc...`
+- Netbeans
+- Java
+- Spring Boot
+- VSCode
+- React.js
+- Code-OSS
+- Node.js
+- Git
+- TortoiseGit
+- GitHub
+- Windows 10
+- Linux (Manjaro/Mint/CentOS)
 
-## User Stories
+## Team Communication Platforms
 
-Template: As a [ USER ] I want to [ ACTION ] So that [ REASONING ]
+- Discord
+- Zoom
+- Email (MS Outlook)
 
-User Personas:
+## Project Constraints
 
-1. User: The end user of the application
-2. `etc. add once defined`
+1. The project may be a standalone application, or a client/server application.
+2. The project may be targeted towards one specific operating system or multiple operating systems.
+3. The project may be targeted to traditional computers and/or tablets and smartphones.
+4. The project must involve a significant amount of custom programming.
+5. You many make a game, but by the end of the semester it must have several fully functional and playable levels (or the equivalent).
+6. The project should not use of tools that do a significant amount of work for you in place of you coding.  For example, if making a game, you may not use Unity or any equivalent tool.
+7. All usage of images, sounds, fonts, code libraries, tools, etc. must adhere to the item’s license.
+8. The project must be completed and deployed by ~May 5 (~3 months).
+9. The project must utilize Git and Github for version control.
 
-<!-- markdownlint-disable MD033 -->
-<table>
+## Project Proposal
 
-<tr><th>User Story</th><th>Acceptance Criteria</th></tr>
+See our [Project Proposal](documentation/Proposal-GoogleDocs.url)
 
-<tr><td>
-As a User, I want to see my FIRE number So that I can better understand when I will be able to retire.
-</td><td><ul><li>
-    Application can Calculate FIRE number
-</li></ul></td></tr>
+## Requirements
 
-<tr><td>
-<b>Etc.. Add many of these to get a good idea of the features</b>
-</td><td><ul><li>
-    <i>What must be done to make the story a reality</i></li><li>
-    <i>Often more than one thing needs to be done per story</i>
-</li></ul></td></tr>
+See our [Requirements Document](documentation/Requirements-GoogleDocs.url)
 
-</table>
-<!-- markdownlint-enable MD033 -->
+## Design
 
-## Aggregates
+See our [Design Document](documentation/Design-GoogleDocs.url)
 
-Basically take all the Acceptance Criteria and group them into rough Categories. Those Categories are your Aggregates. The Aggregates lay the groundwork for what each individual service will end up doing, and helps to get a grasp on what each service in your project will be called and mean on a higher level.
+For a short functional overview of where our technologies apply, see the table below:
 
-### Retirement
+| Module             | Category     | Programming Language | Sdk      | Docker                            |
+| ------------------ | ---------    | -------------------- | ----------- | --------------------------------- |
+| YggFinance WebApp  | Consumer     | JavaScript           | React       | [node:XX](https://hub.docker.com/_/node) |
+| Reverse Proxy      | Support Tool | -                    | -           | [nginx:alpine](https://hub.docker.com/_/nginx) |
+| Budgeting Service  | Service      | Java                 | Spring Boot | [openjdk:XX](https://hub.docker.com/_/openjdk) |
+| Planning Service   | Service      | JavaScript           | Node        | [node:XX](https://hub.docker.com/_/node) |
+| Net Worth Service  | Service      | Java                 | Spring Boot | [openjdk:XX](https://hub.docker.com/_/openjdk) |
 
-- Application can Calculate FIRE number
+---
 
-### `Example` (as in an aggregate for the previous user story example)
+## CAUTION: Below this (aside from License) has yet to be revised, please take anything written with a grain of salt
 
-- `What must be done to make the story a reality`
-- `Often more than one thing needs to be done per story`
-
-## Modules
-
-| Module | Category  | Programming Language | Sdk | Docker |
-| ------ | --------- | -------------------- | -------- | ------ |
-|User WebApp|Consumer|`TODO`|`TODO`|[`TODO`](https://hub.docker.com/)|
-|VPN Gateway|Support Tool|-|-|[`TODO`](https://hub.docker.com/)|
-|Firewall|Support Tool|-|-|[`TODO`](https://hub.docker.com/)|
-|Reverse Proxy|Support Tool|-|-|[nginx:alpine](https://hub.docker.com/_/nginx)|
-|Event Bus|Support Tool|-|-|[rabbitmq:management](https://hub.docker.com/_/rabbitmq)|
-|Event Store|Support Tool|`TODO`|`TODO`|[`TODO`](https://hub.docker.com/)|
-|Retirement Database|Database|-|-|[`TODO`](https://hub.docker.com/)|
-|`Example` Database|Database|-|-|[`TODO`](https://hub.docker.com/)|
-|Retirement Service|Service|`TODO`|`TODO`|[`TODO`](https://hub.docker.com/)|
-|`Example` Service|Service|`TODO`|`TODO`|[`TODO`](https://hub.docker.com/)|
+---
 
 ## API by Service
 
 Each API endpoint (think of it like functions that the UI calls) provided by each service for program functionality.
 
-| Retirement (`ProgrammingLanguage`) |  `Example` (`ProgrammingLanguage`) |
-| ---------------------------------- | ---------------------------------- |
-| get-fire-number                    | `add-example-data`                 |
-| `TODO`                             | `TODO`                             |
-| `TODO`                             | `TODO`                             |
-|                                    | `TODO`                             |
-|                                    | `TODO`                             |
+| Budgeting (Java) | Planning (JavaScript) | Net Worth (JavaScript) |
+| ---------------- | --------------------- | ---------------------- |
+| `TODO`           | `TODO`                | `TODO`                 |
+| `TODO`           | `TODO`                | `TODO`                 |
+| `TODO`           | `TODO`                | `TODO`                 |
+|                  | `TODO`                | `TODO`                 |
+|                  | `TODO`                |                        |
 
 ## Communication Topography
 
 A Diagram detailing the topology of the project.
 
-`Below is an example diagram from this project` [Microservices](https://github.com/ayhanavci/Microservices)
-
-![Topology](doc/images/exampleTopologyDiagram.png)
+![Topology](documentation/images/YggFinance-System-Topology-Simple.png)
 
 ## Sagas
 
@@ -118,7 +107,7 @@ A Diagram detailing the topology of the project.
 
 `Below is an example saga diagram from this project` [Microservices](https://github.com/ayhanavci/Microservices)
 
-![Topology](doc/images/exampleSagaDiagram.png)
+![Topology](documentation/images/exampleSagaDiagram.png)
 
 ## Running the Project
 
@@ -126,7 +115,7 @@ A Diagram detailing the topology of the project.
 
 ## Licence
 
-GNU General Public License v3.0
+MIT License
 
 ## Authors
 
