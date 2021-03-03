@@ -14,6 +14,18 @@ Alternatively, we include an archived PDF version of this file within this repo 
 
 See our [Project Schedule](https://docs.google.com/spreadsheets/d/1z0qx8BHvJfu07h4-Id_6jOLh6xy1ZivX3l5OgTq2Dmk/edit) Google Sheets for the most up to date version.
 
+## Project  Requirements
+
+See our [Requirements Document](https://docs.google.com/document/d/183tJPdbQjW1SCaJoEjVqWTh_mHdAAX0H52b6hTXzoHs/edit) Google Docs for the most up to date version.
+
+Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Requirements.pdf).
+
+## Project Design
+
+See our [Design Document](https://docs.google.com/document/d/1cupP7yOYICyA_QUDTlE-oBpe0ZhrcVWDnqxv1n_v0fs/edit) Google Docs for the most up to date version.
+
+Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Design.pdf).
+
 ## Technologies
 
 ### Concepts
@@ -38,9 +50,6 @@ See our [Project Schedule](https://docs.google.com/spreadsheets/d/1z0qx8BHvJfu07
 
 ### Development Environments
 
-- Netbeans
-- Java
-- Spring Boot
 - VSCode
 - React.js
 - Code-OSS
@@ -76,27 +85,15 @@ See our [Project Schedule](https://docs.google.com/spreadsheets/d/1z0qx8BHvJfu07
 8. The project must be completed and deployed by ~May 5 (~3 months).
 9. The project must utilize Git and Github for version control.
 
-## Project  Requirements
-
-See our [Requirements Document](https://docs.google.com/document/d/183tJPdbQjW1SCaJoEjVqWTh_mHdAAX0H52b6hTXzoHs/edit) Google Docs for the most up to date version.
-
-Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Requirements.pdf).
-
-## Project Design
-
-See our [Design Document](https://docs.google.com/document/d/1Vj44aKO45-_g5VRWgHCZUrLQVt4fGv64gFORrzaFDCY/edit) Google Docs for the most up to date version.
-
-Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Design.pdf).
-
 For a short functional overview of where our technologies apply, see the table below:
 
 | Module             | Category     | Programming Language | Sdk      | Docker                            |
 | ------------------ | ---------    | -------------------- | ----------- | --------------------------------- |
 | YggFinance WebApp  | Consumer     | JavaScript           | React       | [node:XX](https://hub.docker.com/_/node) |
 | Reverse Proxy      | Support Tool | -                    | -           | [nginx:alpine](https://hub.docker.com/_/nginx) |
-| Budgeting Service  | Service      | Java                 | Spring Boot | [openjdk:XX](https://hub.docker.com/_/openjdk) |
+| Budgeting Service  | Service      | JavaScript           | Node        | [node:XX](https://hub.docker.com/_/node) |
 | Planning Service   | Service      | JavaScript           | Node        | [node:XX](https://hub.docker.com/_/node) |
-| Net Worth Service  | Service      | Java                 | Spring Boot | [openjdk:XX](https://hub.docker.com/_/openjdk) |
+| Net Worth Service  | Service      | JavaScript           | Node        | [node:XX](https://hub.docker.com/_/node) |
 
 ---
 
