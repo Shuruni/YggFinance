@@ -1,0 +1,9 @@
+{
+  "name": "yggfinance_backend",
+  "version": "0.0.0",
+  "description": "YGGFinance_backend",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
