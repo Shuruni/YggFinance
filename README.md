@@ -26,6 +26,12 @@ See our [Design Document](https://docs.google.com/document/d/1cupP7yOYICyA_QUDTl
 
 Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Design.pdf).
 
+## Project Update
+
+See our [Project Update](https://docs.google.com/document/d/1enHIvqHLjqsqgrAXx9qMaRhQO4M0gHAmen6SajhYSyI/edit) Google Docs for the most up to date version.
+
+Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Update.pdf).
+
 ## Technologies
 
 ### Concepts
