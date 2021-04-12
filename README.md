@@ -41,7 +41,9 @@ Alternatively, we include an archived PDF version of this file within this repo 
 
 - Docker
 - Docker Networks
-- Home Linux Server / Amazon Web Services (AWS)
+- Self-Hosted Server
+- Ubuntu Server
+- Localhost Tunneling
 
 ### Communication Standard
 
@@ -58,7 +60,7 @@ Alternatively, we include an archived PDF version of this file within this repo 
 - TortoiseGit
 - GitHub
 - Windows 10
-- Linux (Manjaro/Mint/CentOS)
+- Linux (Manjaro & Ubuntu)
 
 ### Design/Documentation Tools
 
@@ -95,39 +97,11 @@ For a short functional overview of where our technologies apply, see the table b
 | Planning Service   | Service      | JavaScript           | Node        | [node:XX](https://hub.docker.com/_/node) |
 | Net Worth Service  | Service      | JavaScript           | Node        | [node:XX](https://hub.docker.com/_/node) |
 
----
-
-## CAUTION: Below this (aside from License) has yet to be revised, please take anything written with a grain of salt
-
----
-
-## API by Service
-
-Each API endpoint (think of it like functions that the UI calls) provided by each service for program functionality.
-
-| Budgeting (Java) | Planning (JavaScript) | Net Worth (JavaScript) |
-| ---------------- | --------------------- | ---------------------- |
-| `TODO`           | `TODO`                | `TODO`                 |
-| `TODO`           | `TODO`                | `TODO`                 |
-| `TODO`           | `TODO`                | `TODO`                 |
-|                  | `TODO`                | `TODO`                 |
-|                  | `TODO`                |                        |
-
 ## Communication Topography
 
 A Diagram detailing the topology of the project.
 
-![Topology](documentation/images/YggFinance-System-Topology-Simple.png)
-
-## Sagas
-
-### `TODO` Saga
-
-`TODO`
-
-`Below is an example saga diagram from this project` [Microservices](https://github.com/ayhanavci/Microservices)
-
-![Topology](documentation/images/exampleSagaDiagram.png)
+![Topology](documentation/images/YggFinance-System-Topology.png)
 
 ## Running the Project
 
