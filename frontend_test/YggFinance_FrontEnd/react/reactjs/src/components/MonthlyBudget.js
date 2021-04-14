@@ -19,15 +19,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function AutoGrid() {
+export default function CenteredGrid() {
   const classes = useStyles();
+
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={1}>
-        <Grid item Menu>
-            <MonthlyBudgetMenu/>
-            <Button variant="contained">
+      <Grid>
+        <Grid item Menu container justify="centered">
+          <MonthlyBudgetMenu/>
+          <Button variant="contained">
               New Month
           </Button>
           <Button variant="contained">
@@ -35,8 +36,8 @@ export default function AutoGrid() {
           </Button>
         </Grid>
       </Grid>
-      <Grid container spacing={4}>
-        <Grid item Inputs>
+      <Grid container direction="row" spacing={3}>
+        <Grid item xs={6}>
           <Paper className={classes.paper}>
             Transactions:
           </Paper>
@@ -49,8 +50,11 @@ export default function AutoGrid() {
           <Paper className={classes.paper}>
             <TextField id="outlined-basic" label="Date (MM/DD/YYYY)" variant="outlined" />
           </Paper>
+          <Button variant="contained">
+              Reconcile
+          </Button>
         </Grid>
-        <Grid item Outputs>
+        <Grid item xs={6}>
           <Paper className={classes.paper}>
             History:
           </Paper>

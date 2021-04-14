@@ -27,8 +27,8 @@ export default function AutoGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={4}>
-        <Grid item Inputs>
+      <Grid container spacing={3}>
+        <Grid item xs={6}>
           <Paper className={classes.paper}>
             <TextField id="outlined-basic" label="Initial Investment (USD)" variant="outlined" />
           </Paper>
@@ -45,17 +45,17 @@ export default function AutoGrid() {
               Calculate
           </Button>
           <FormControl component="fieldset">
-      <FormGroup aria-label="position" row>
-        <FormControlLabel
-          value="top"
-          control={<Switch color="primary" />}
-          label="Time Frame | Savings Goal"
-          labelPlacement="top"
-        />
-      </FormGroup>
-    </FormControl>
+            <FormGroup aria-label="position" row>
+              <FormControlLabel
+                value="top"
+                control={<Switch color="primary" />}
+                label="Time Frame | Savings Goal"
+                labelPlacement="top"
+              />
+            </FormGroup>
+          </FormControl>
         </Grid>
-        <Grid item Outputs>
+        <Grid item xs={6}>
           <Paper className={classes.paper}>
             <SPTable/>
           </Paper>

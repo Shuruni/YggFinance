@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import SavingsPlanner from './SavingsPlanner';
 import MonthlyBudget from './MonthlyBudget';
+import NetWorth from './NetWorth';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -155,7 +156,7 @@ function TabPanel(props) {
           <MonthlyBudget/>
         </TabPanel>
         <TabPanel value={value} index={4}>
-          Net Worth
+          <NetWorth/>
         </TabPanel>
       </div>
     );
