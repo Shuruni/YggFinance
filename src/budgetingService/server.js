@@ -12,12 +12,13 @@ const HOST = '0.0.0.0';
 const app = express();
 app.use(express.json()) // for parsing application/json
 app.post('/', upload.single('file'), function (req, res, next) {
-    console.log(req.file, req.body);
+    console.log(req.body);
+    console.log(req.file);
     res.json({
       transactions: [
-        {merchant: "merchant1", amount: 7, date: "2020/07/23", isReconciled: true},
-        {merchant: "merchant2", amount: 42, date: "2021/01/17", isReconciled: true},
-        {merchant: "merchant3", amount: 69, date: "2021/04/15", isReconciled: false}
+        {merchant: "merchant1", amount: 7, date: (new Date()).toJSON(), isReconciled: true},
+        {merchant: "merchant2", amount: 42, date: (new Date()).toJSON(), isReconciled: true},
+        {merchant: "merchant3", amount: 69, date: (new Date()).toJSON(), isReconciled: false}
       ]
     });
   });
