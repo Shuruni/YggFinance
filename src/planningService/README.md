@@ -1,4 +1,4 @@
-# Budgeting Service
+# Planning Service
 
 webserver that consumes an HTTP POST request on localhost:8080 of `Content-Type="multipart/form-data"` with a req.body of the form:
 

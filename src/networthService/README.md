@@ -19,8 +19,7 @@ webserver that consumes an HTTP POST request on localhost:8080 of `Content-Type=
       "autoLoans": number,
       "studentLoans": number,
       "other": number
-      },
-   "netWorth": number
+      }
 }
 ```
 
@@ -28,11 +27,7 @@ and is expected to send a response (res) of `Content-Type: "application/json"` w
 
 ```JSON
 {
-   "endBalance": number,
-   "timeFrame": number,
-   "startingAmount": number,
-   "totalContributions": number,
-   "totalInterest": number
+   "netWorth": number
 }
 ```
 

@@ -12,12 +12,8 @@ app.use(express.json()) // for parsing application/json
 app.post('/', function (req, res, next) {
     console.log(req.body)
     res.json({
-      endBalance: 42,
-      timeFrame: 42,
-      startingAmount: 42,
-      totalContributions: 42,
-      totalInterest: 42
-   })
+      netWorth: 42
+    })
   });
 
 // app.post('/', (req, res) => {
