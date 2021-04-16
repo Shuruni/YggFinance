@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+    reverse-proxy:
+        image: nginx:latest
+        container_name: yggfinance-reverse-proxy
+        volumes:
+         - ./src/reverseProxy/nginx.conf:/etc/nginx/nginx.conf
+         - ./src/reverseProxy/nginx/error.log:/etc/nginx/error_log.log
+        ports:
+            - 1337:80
+        networks: 
+            # - webapp-network
+            - budgeting-network
+            - networth-network
+            - planning-network
+    # webapp:
+    #     build: ./src/webApp
+    #     container_name: webapp
+    #     networks:
+    #         - webapp-network
+    budgeting-service:
+        build: ./src/budgetingService
+        container_name: budgeting-service
+        networks:
+            - budgeting-network
+    networth-service:
+        build: ./src/networthService
+        container_name: networth-service
+        networks:
+            - networth-network
+    planning-service:
+        build: ./src/planningService
+        container_name: planning-service
+        networks:
+            - planning-network
+
+networks: 
+    # webapp-network:
+    budgeting-network:
+    networth-network:
+    planning-network:
