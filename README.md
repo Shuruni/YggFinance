@@ -7,11 +7,11 @@ YggFinance aims to help our end users gain a better grasp on three major areas o
 ## Running the Project
 
 To run the project locally, just run `docker-compose up` in the project's root directory.
-Once everything is up and running, you can access the webApp at http://localhost:1337
+Once everything is up and running, you can access the webApp at <http://localhost:1337>
 
 To rebuild the project after making changes, run `docker-compose build`
 
-for production builds, instead run `TODO` with the `<url>` that you are tunneling http://localhost:1337 to.
+for production builds, instead run `TODO` with the `<url>` that you are tunneling <http://localhost:1337> to.
 
 ## Project Proposal
 
