@@ -4,6 +4,13 @@
 
 YggFinance aims to help our end users gain a better grasp on three major areas of their personal finance ー Monthly Budgeting, Savings Planning, and Net Worth Tracking. YggFinance offers tools for each of these categories that aim to make it easier for our end users to track personal spending trends, to compare strategies for personal savings goals, and to gain insight into their current net worth.
 
+## Running the Project
+
+To run the project locally, just run `docker-compose up` in the project's root directory.
+Once everything is up and running, you can access the webApp at http://localhost:1337
+
+for production builds, instead run `TODO` with the `<url>` that you are tunneling http://localhost:1337 to.
+
 ## Project Proposal
 
 See our [Project Proposal](https://docs.google.com/document/d/1nkHFe5301lCNpXaoW17DRWBJwUDSga3-ieydW12w5K4/edit) Google Docs for the most up to date version.
@@ -108,10 +115,6 @@ For a short functional overview of where our technologies apply, see the table b
 A Diagram detailing the topology of the project.
 
 ![Topology](documentation/images/YggFinance-System-Topology.png)
-
-## Running the Project
-
-`TODO`
 
 ## Licence
 
