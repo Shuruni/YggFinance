@@ -1,6 +1,6 @@
 # NetWorth Service
 
-webserver that consumes an HTTP POST request on localhost:8080 of `Content-Type="application/json"` with a req.body of the form:
+webserver that consumes an HTTP `POST` request on `http://localhost:8080` of `Content-Type="application/json"` with a req.body of the form:
 
 ```JSON
 {
