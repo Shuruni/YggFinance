@@ -1,6 +1,6 @@
 # Budgeting Service
 
-webserver that consumes an HTTP POST request on localhost:8080 of `Content-Type="multipart/form-data"` with a req.body of the form:
+webserver that consumes an HTTP `POST` request on `http://localhost:8080` of `Content-Type="multipart/form-data"` with a req.body of the form:
 
 ```JSON
 {
@@ -11,7 +11,7 @@ webserver that consumes an HTTP POST request on localhost:8080 of `Content-Type=
 }
 ```
 
-and a req.file of the form:
+and a req.file of the form (automatically generated when a file is sent/received):
 
 ```JSON
 {
@@ -84,9 +84,9 @@ For Testing that the Service is properly receiving and responding to requests, w
 To teardown the application:
 
 - RUN `docker rm -f <name>`
+
+To remove all build files for a complete reinstall **(NOTE: Only do if encountering build errors)**:
+
 - RUN `docker rmi budgeting-service`
-
-To remove all npm files for a complete reinstall **(NOTE: Only do if encountering npm errors)**:
-
 - DELETE `src/budgetingService/node_modules`
 - DELETE `src/budgetingService/package-lock.json`

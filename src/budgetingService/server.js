@@ -1,7 +1,9 @@
 'use strict';
 
-const express = require('express');
-const multer  = require('multer');
+import parseRequest from "./parseRequest.js";
+import express from "express";
+import multer from "multer";
+
 const upload = multer({ dest: 'uploads/' });
 
 // Constants
@@ -14,18 +16,13 @@ app.use(express.json()) // for parsing application/json
 app.post('/', upload.single('file'), function (req, res, next) {
     console.log(req.body);
     console.log(req.file);
+
+    let transactions = parseRequest(req); // IMPLEMENT THIS FUNCTION YOURSELF in parseRequest.js
+
     res.json({
-      transactions: [
-        {merchant: "merchant1", amount: 7, date: (new Date()).toJSON(), isReconciled: true},
-        {merchant: "merchant2", amount: 42, date: (new Date()).toJSON(), isReconciled: true},
-        {merchant: "merchant3", amount: 69, date: (new Date()).toJSON(), isReconciled: false}
-      ]
+      transactions: transactions
     });
   });
-
-// app.post('/', (req, res) => {
-//   res.send('Hello World');
-// });
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);

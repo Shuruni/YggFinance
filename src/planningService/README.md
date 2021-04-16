@@ -65,9 +65,9 @@ For Testing that the Service is properly receiving and responding to requests, w
 To teardown the application:
 
 - RUN `docker rm -f <name>`
+
+To remove all build files for a complete reinstall **(NOTE: Only do if encountering build errors)**:
+
 - RUN `docker rmi planning-service`
-
-To remove all npm files for a complete reinstall **(NOTE: Only do if encountering npm errors)**:
-
 - DELETE `src/planningService/node_modules`
 - DELETE `src/planningService/package-lock.json`

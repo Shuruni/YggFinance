@@ -10,5 +10,6 @@
   "dependencies": {
     "express": "expressjs/express",
     "multer": "expressjs/multer"
-  }
+  },
+  "type": "module"
 }
