@@ -1,14 +1,13 @@
 {
-  "name": "planning-service",
+  "name": "docker_web_app",
   "version": "1.0.0",
   "description": "Node.js on Docker",
-  "author": "Alan Holman <aholman7@my.apsu.edu>",
+  "author": "Shuruni Hikaru <speedster708@gmail.com",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "expressjs/express",
-    "multer": "expressjs/multer"
+    "express": "^4.16.1"
   }
 }
