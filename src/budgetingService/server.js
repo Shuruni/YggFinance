@@ -13,11 +13,12 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.use(express.json()) // for parsing application/json
-app.post('/', upload.single('file'), function (req, res, next) {
+app.post('/', upload.single('file'), function (req, res) {
     console.log(req.body);
     console.log(req.file);
 
-    let transactions = parseRequest(req); // IMPLEMENT THIS FUNCTION YOURSELF in parseRequest.js
+    // IMPLEMENT THIS FUNCTION YOURSELF in parseRequest.js
+    let transactions = parseRequest(req); 
 
     res.json({
       transactions: transactions

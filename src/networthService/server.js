@@ -1,6 +1,7 @@
 'use strict';
 
-const express = require('express');
+import calcNetWorth from "./calcNetWorth.js"
+import express from "express";
 
 // Constants
 const PORT = 8080;
@@ -9,10 +10,14 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.use(express.json()) // for parsing application/json
-app.post('/', function (req, res, next) {
+app.post('/', function (req, res) {
     console.log(req.body)
+
+    // IMPLEMENT THIS FUNCTION YOURSELF in calcNetWorth.js
+    let netWorth = calcNetWorth(req.body);
+
     res.json({
-      netWorth: 42
+      netWorth: netWorth
     })
   });
 

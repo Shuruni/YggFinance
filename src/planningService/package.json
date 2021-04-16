@@ -1,14 +1,14 @@
 {
-  "name": "docker_web_app",
+  "name": "planning-service",
   "version": "1.0.0",
-  "description": "Node.js on Docker",
+  "description": "Planning Service for the YggFinance Web App",
   "author": "Alan Holman <aholman7@my.apsu.edu>",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "expressjs/express"
   },
   "type": "module"
 }
