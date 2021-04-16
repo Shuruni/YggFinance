@@ -2,12 +2,13 @@
   "name": "docker_web_app",
   "version": "1.0.0",
   "description": "Node.js on Docker",
-  "author": "Shuruni Hikaru <speedster708@gmail.com",
+  "author": "Alan Holman <aholman7@my.apsu.edu>",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.16.1"
-  }
+  },
+  "type": "module"
 }
