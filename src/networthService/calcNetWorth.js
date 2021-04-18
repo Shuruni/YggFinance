@@ -9,15 +9,23 @@ function calcNetWorth(requestBody) {
     // Read the contents of the requestBody
     let assets = requestBody.assets;
     let liabilities = requestBody.liabilities;
+    
+    // Hold the total sums of assets and liabilities
+    let totalAssets = new Number();
+    let totalLiabilites = new Number();
 
-    // TO BE IMPLEMENTED ;)
-    // HINT: To read the contents for the assets or liabilities objects, 
-    // hover over it in VSCode to see the different <field>s present and then use "assets.<field>"
-    // to access them.
+    // Iterate through each networth item to calc total of assets and liabilites
+    for (const prop1 in assets){
+        totalAssets += assets[prop1];
+    }
 
-    // dummy return value
-    let netWorth = 42;
+    for (const prop2 in liabilities){
+        totalLiabilites += liabilities[prop2];
+    }
 
+    // perform assets - liabilities calc
+    let netWorth = (totalAssets - totalLiabilites);
+    // return networth
     return netWorth;
 }
 
