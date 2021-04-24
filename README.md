@@ -6,22 +6,19 @@ YggFinance aims to help our end users gain a better grasp on three major areas o
 
 ## Running the Project
 
-To run the project locally, just run `docker-compose up` in the project's root directory.
-Once everything is up and running, you can access the webApp at <http://localhost:1337>
+### Release
 
-To rebuild the project after making changes, run `docker-compose build`
+To run the most recent release, see the instructions in the [README.md](release/README.md) in the [release](./release) directory
 
-for production builds, instead run `TODO` with the `<url>` that you are tunneling <http://localhost:1337> to.
+### Source
+
+To build and run the project from source, see the instructions in the [README.md](src/README.md) in the [src](./src) directory
 
 ## Project Proposal
 
 See our [Project Proposal](https://docs.google.com/document/d/1nkHFe5301lCNpXaoW17DRWBJwUDSga3-ieydW12w5K4/edit) Google Docs for the most up to date version.
 
 Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Proposal.pdf).
-
-## Project Schedule
-
-See our [Project Schedule](https://docs.google.com/spreadsheets/d/1z0qx8BHvJfu07h4-Id_6jOLh6xy1ZivX3l5OgTq2Dmk/edit) Google Sheets for the most up to date version.
 
 ## Project  Requirements
 
@@ -40,6 +37,10 @@ Alternatively, we include an archived PDF version of this file within this repo 
 See our [Project Update](https://docs.google.com/document/d/1enHIvqHLjqsqgrAXx9qMaRhQO4M0gHAmen6SajhYSyI/edit) Google Docs for the most up to date version.
 
 Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Update.pdf).
+
+## Project Final Report
+
+`TODO`
 
 ## Technologies
 
@@ -105,12 +106,13 @@ Alternatively, we include an archived PDF version of this file within this repo 
 For a short functional overview of where our technologies apply, see the table below:
 
 | Module             | Category     | Programming Language | Sdk      | Docker                            |
-| ------------------ | ---------    | -------------------- | ----------- | --------------------------------- |
-| YggFinance WebApp  | Consumer     | JavaScript           | React       | [node:XX](https://hub.docker.com/_/node) |
-| Reverse Proxy      | Support Tool | -                    | -           | [nginx:alpine](https://hub.docker.com/_/nginx) |
-| Budgeting Service  | Service      | JavaScript           | Node        | [node:XX](https://hub.docker.com/_/node) |
-| Planning Service   | Service      | JavaScript           | Node        | [node:XX](https://hub.docker.com/_/node) |
-| Net Worth Service  | Service      | JavaScript           | Node        | [node:XX](https://hub.docker.com/_/node) |
+| ------------------ | ------------ | -------------------- | ----------- | ------------------------------------------------ |
+| YggFinance WebApp  | Consumer     | JavaScript           | Node        | [nginx:alpine](https://hub.docker.com/_/nginx)   |
+| Reverse Proxy      | Support Tool | -                    | -           | [nginx:alpine](https://hub.docker.com/_/nginx)   |
+| Tunneling Service  | Support Tool | Bash                 | -           | [node:14-alpine](https://hub.docker.com/_/nginx) |
+| Budgeting Service  | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
+| Planning Service   | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
+| Net Worth Service  | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
 
 ## Communication Topography
 

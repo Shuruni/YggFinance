@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+    tunneling-service:
+        image: shuruni/yggfinance_tunneling-service
+        container_name: tunneling-service
+        environment:
+            LT_SUBDOMAIN: yggfinance
+        networks: 
+            - reverse-proxy-network
+    reverse-proxy:
+        image: shuruni/yggfinance_reverse-proxy
+        container_name: reverse-proxy
+        networks: 
+            - reverse-proxy-network
+            - webapp-network
+            - budgeting-network
+            - networth-network
+            - planning-network
+    webapp:
+        image: shuruni/yggfinance_webapp
+        container_name: webapp
+        networks:
+            - webapp-network
+    budgeting-service:
+        image: shuruni/yggfinance_budgeting-service
+        container_name: budgeting-service
+        networks:
+            - budgeting-network
+    networth-service:
+        image: shuruni/yggfinance_networth-service
+        container_name: networth-service
+        networks:
+            - networth-network
+    planning-service:
+        image: shuruni/yggfinance_planning-service
+        container_name: planning-service
+        networks:
+            - planning-network
+
+networks: 
+    reverse-proxy-network:
+    webapp-network:
+    budgeting-network:
+    networth-network:
+    planning-network:
