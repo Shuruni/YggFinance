@@ -8,7 +8,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "expressjs/express"
+    "express": "^4.17.1"
   },
   "type": "module"
 }

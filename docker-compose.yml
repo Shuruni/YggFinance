@@ -1,12 +1,16 @@
 version: "3.8"
 
 services:
+    tunneling-service:
+        build: ./src/tunnelingService
+        container_name: tunneling-service
+        networks: 
+            - reverse-proxy-network
     reverse-proxy:
         build: ./src/reverseProxy
         container_name: reverse-proxy
-        ports:
-            - 1337:80
         networks: 
+            - reverse-proxy-network
             - webapp-network
             - budgeting-network
             - networth-network
@@ -33,6 +37,7 @@ services:
             - planning-network
 
 networks: 
+    reverse-proxy-network:
     webapp-network:
     budgeting-network:
     networth-network:
