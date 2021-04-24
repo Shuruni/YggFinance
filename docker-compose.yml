@@ -4,6 +4,8 @@ services:
     tunneling-service:
         build: ./src/tunnelingService
         container_name: tunneling-service
+        environment:
+            LT_SUBDOMAIN: yggfinance
         networks: 
             - reverse-proxy-network
     reverse-proxy:
