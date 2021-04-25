@@ -14,6 +14,11 @@ function calcTimeFrame(requestBody, responseBody) {
     let savingsGoal = requestBody.savingsGoal;
 
     // TO BE IMPLEMENTED ;)
+    //Compound interest formula t = ln(A/P) / n[ln(1 + r/n)]
+
+
+    timeFrame = Math.log(a / p) / (n * (Math.log(1 + (r/n))));
+
 
     // Write the results to the responseBody
     responseBody.endBalance = 0;
