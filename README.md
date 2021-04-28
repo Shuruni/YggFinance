@@ -62,7 +62,7 @@ Alternatively, we include an archived PDF version of this file within this repo 
 | ------------------ | ------------ | -------------------- | ----------- | ------------------------------------------------ |
 | YggFinance WebApp  | Consumer     | JavaScript           | Node        | [nginx:alpine](https://hub.docker.com/_/nginx)   |
 | Reverse Proxy      | Support Tool | -                    | -           | [nginx:alpine](https://hub.docker.com/_/nginx)   |
-| Tunneling Service  | Support Tool | Bash                 | -           | [node:14-alpine](https://hub.docker.com/_/nginx) |
+| Tunneling Service  | Support Tool | Bash                 | -           | [node:14-alpine](https://hub.docker.com/_/node) |
 | Budgeting Service  | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
 | Planning Service   | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
 | Net Worth Service  | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
