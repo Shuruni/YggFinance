@@ -14,6 +14,18 @@ To run the most recent release, see the instructions in the [README.md](release/
 
 To build and run the project from source, see the instructions in the [README.md](src/README.md) in the [src](./src) directory
 
+## Project Constraints
+
+- The project may be a standalone application, or a client/server application.
+- The project may be targeted towards one specific operating system or multiple operating systems.
+- The project may be targeted to traditional computers and/or tablets and smartphones.
+- The project must involve a significant amount of custom programming.
+- You many make a game, but by the end of the semester it must have several fully functional and playable levels (or the equivalent).
+- The project should not use of tools that do a significant amount of work for you in place of you coding.  For example, if making a game, you may not use Unity or any equivalent tool.
+- All usage of images, sounds, fonts, code libraries, tools, etc. must adhere to the item’s license.
+- The project must be completed and deployed by ~May 5 (~3 months).
+- The project must utilize Git and Github for version control.
+
 ## Project Proposal
 
 See our [Project Proposal](https://docs.google.com/document/d/1nkHFe5301lCNpXaoW17DRWBJwUDSga3-ieydW12w5K4/edit) Google Docs for the most up to date version.
@@ -40,7 +52,24 @@ Alternatively, we include an archived PDF version of this file within this repo 
 
 ## Project Final Report
 
-`TODO`
+See our [Final Report](https://docs.google.com/document/d/1JO1SveC9G8qQIsc-aommGGQhEVvc7RRU_6azQfK_eN0/edit?usp=sharing) Google Docs for the most up to date version.
+
+Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Final_Report.pdf).
+
+## Service Design
+
+| Module             | Category     | Programming Language | Sdk      | Docker                            |
+| ------------------ | ------------ | -------------------- | ----------- | ------------------------------------------------ |
+| YggFinance WebApp  | Consumer     | JavaScript           | Node        | [nginx:alpine](https://hub.docker.com/_/nginx)   |
+| Reverse Proxy      | Support Tool | -                    | -           | [nginx:alpine](https://hub.docker.com/_/nginx)   |
+| Tunneling Service  | Support Tool | Bash                 | -           | [node:14-alpine](https://hub.docker.com/_/node) |
+| Budgeting Service  | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
+| Planning Service   | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
+| Net Worth Service  | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
+
+## Communication Topography
+
+![Topology](documentation/images/YggFinance-System-Topology-Final-v2.png)
 
 ## Technologies
 
@@ -50,28 +79,31 @@ Alternatively, we include an archived PDF version of this file within this repo 
 - Microservices pattern
 - Web Application
 - Local Storage
-- Stateless Server
-- RESTful Services
+- Remote Proxy
 
 ### Deployment
 
 - Docker
-- Docker Networks
-- Self-Hosted Server
-- Ubuntu Server
-- Localhost Tunneling
+- Docker Compose
 
-### Communication Standard
+### Communication
 
-- HTTP Request Type
-- JSON Message Format
+- HTTP Requests
+- JSON
+- HTML Forms
+- [LocalTunnel](https://localtunnel.github.io/www/)
+- [Nginx](https://www.nginx.com/)
 
-### Development Environments
+### Programming
+
+- Node.js
+- React.js
+- Material UI
+- Bash
+
+### Development Environments/Tools
 
 - VSCode
-- React.js
-- Code-OSS
-- Node.js
 - Git
 - TortoiseGit
 - GitHub
@@ -81,7 +113,6 @@ Alternatively, we include an archived PDF version of this file within this repo 
 ### Design/Documentation Tools
 
 - Google Docs/Slides/Sheets
-- Libre Office
 - Microsoft Office
 - [app.diagrams.net](app.diagrams.net)
 
@@ -90,35 +121,6 @@ Alternatively, we include an archived PDF version of this file within this repo 
 - Discord
 - Zoom
 - Email (MS Outlook)
-
-## Project Constraints
-
-1. The project may be a standalone application, or a client/server application.
-2. The project may be targeted towards one specific operating system or multiple operating systems.
-3. The project may be targeted to traditional computers and/or tablets and smartphones.
-4. The project must involve a significant amount of custom programming.
-5. You many make a game, but by the end of the semester it must have several fully functional and playable levels (or the equivalent).
-6. The project should not use of tools that do a significant amount of work for you in place of you coding.  For example, if making a game, you may not use Unity or any equivalent tool.
-7. All usage of images, sounds, fonts, code libraries, tools, etc. must adhere to the item’s license.
-8. The project must be completed and deployed by ~May 5 (~3 months).
-9. The project must utilize Git and Github for version control.
-
-For a short functional overview of where our technologies apply, see the table below:
-
-| Module             | Category     | Programming Language | Sdk      | Docker                            |
-| ------------------ | ------------ | -------------------- | ----------- | ------------------------------------------------ |
-| YggFinance WebApp  | Consumer     | JavaScript           | Node        | [nginx:alpine](https://hub.docker.com/_/nginx)   |
-| Reverse Proxy      | Support Tool | -                    | -           | [nginx:alpine](https://hub.docker.com/_/nginx)   |
-| Tunneling Service  | Support Tool | Bash                 | -           | [node:14-alpine](https://hub.docker.com/_/nginx) |
-| Budgeting Service  | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
-| Planning Service   | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
-| Net Worth Service  | Service      | JavaScript           | Node        | [node:14-alpine](https://hub.docker.com/_/node)  |
-
-## Communication Topography
-
-A Diagram detailing the topology of the project.
-
-![Topology](documentation/images/YggFinance-System-Topology.png)
 
 ## Licence
 
