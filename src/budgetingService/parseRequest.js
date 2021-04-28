@@ -8,6 +8,7 @@ import parseCSVtoJSON from "./parseCSVtoJSON.js";
  */
 function parseRequest(req) {
     // Retrieve the Headers from req.body
+    let hasHeaders = req.body.hasHeaders;
     let merchantColumn = req.body.merchantColumn;
     let amountColumn = req.body.amountColumn;
     let dateColumn = req.body.dateColumn;
@@ -15,7 +16,7 @@ function parseRequest(req) {
     // Retrieve the path of the csv file from the req.file fields
     let filePath = req.file.path;
 
-    return parseCSVtoJSON(filePath, merchantColumn, amountColumn, dateColumn);
+    return parseCSVtoJSON(filePath, hasHeaders, merchantColumn, amountColumn, dateColumn);
 }
 
 export default parseRequest;

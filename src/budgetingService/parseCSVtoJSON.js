@@ -7,21 +7,23 @@ import csv from "csv-parser";
  * function to handle the processing of the CSV file
  * 
  * @param {string} filePath the path of the csv file to parse
+ * @param {string} hasHeaders which column letter contains the merchant information?
  * @param {string} merchantColumn which column letter contains the merchant information?
  * @param {string} amountColumn which column letter contains the amount information?
  * @param {string} dateColumn which column letter contains the date information?
  * @returns {Promise} a Promise that resolves to a JSON Array of transaction objects
  */
-async function parseCSVtoJSON(filePath, merchantColumn, amountColumn, dateColumn) {
+async function parseCSVtoJSON(filePath, hasHeaders, merchantColumn, amountColumn, dateColumn) {
   return new Promise ((resolve) => {
     let results = [];
 
+    hasHeaders = (String(hasHeaders).toLowerCase() == "true") ? 1 : 0;
     merchantColumn = columnToIndex(merchantColumn);
     amountColumn = columnToIndex(amountColumn);
     dateColumn = columnToIndex(dateColumn);
 
     fs.createReadStream(filePath)
-      .pipe(csv({ headers: false, skipLines: 1 }))
+      .pipe(csv({ headers: false, skipLines: hasHeaders }))
       .on('data', (data) => results.push(data))
       .on('end', () => {
         let transactions = [];
