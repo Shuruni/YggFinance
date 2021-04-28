@@ -1,5 +1,4 @@
 import parseCSVtoJSON from "./parseCSVtoJSON.js";
-
 /**
  * 
  * parses Request header and file information for further processing
@@ -25,7 +24,8 @@ function parseRequest(req) {
     //     "size": number
     // }
 
-    let csv = undefined // IMPLEMENT THIS YOURSELF ;)
+    let csv = req.file.path;
+
 
     // IMPLEMENT THIS FUNCTION YOURSELF in parseCSVtoJSON.js
     return parseCSVtoJSON(csv, hasHeaders, merchantColumn, amountColumn, dateColumn);
