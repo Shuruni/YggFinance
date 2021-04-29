@@ -2,7 +2,10 @@
   "name": "networth-service",
   "version": "1.0.0",
   "description": "NetWorth Service for the YggFinance Web App",
-  "author": "Alan Holman <aholman7@my.apsu.edu>",
+  "contributors": [
+    "Alan Holman <aholman7@my.apsu.edu>",
+    "Blake Hudson <chudson21@my.apsu.edu>"
+  ],
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

@@ -7,7 +7,7 @@ import csv from "csv-parser";
  * function to handle the processing of the CSV file
  * 
  * @param {string} filePath the path of the csv file to parse
- * @param {string} hasHeaders which column letter contains the merchant information?
+ * @param {string} hasHeaders is the first row of the csv header information? (true or false)
  * @param {string} merchantColumn which column letter contains the merchant information?
  * @param {string} amountColumn which column letter contains the amount information?
  * @param {string} dateColumn which column letter contains the date information?
