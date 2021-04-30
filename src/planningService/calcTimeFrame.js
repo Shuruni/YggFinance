@@ -10,7 +10,6 @@ function calcTimeFrame(requestBody, responseBody) {
     let initialInvestment = requestBody.initialInvestment;
     let avgRate = requestBody.avgRateOfReturn;
     let monthlyContributions = requestBody.monthlyContributions;
-    let timeFrame = requestBody.timeFrame;
     let finalAmount = requestBody.savingsGoal;
 
     // TO BE IMPLEMENTED ;)
