@@ -26,35 +26,43 @@ To build and run the project from source, see the instructions in the [README.md
 - The project must be completed and deployed by ~May 5 (~3 months).
 - The project must utilize Git and Github for version control.
 
-## Project Proposal
+## Project Deliverables
 
-See our [Project Proposal](https://docs.google.com/document/d/1nkHFe5301lCNpXaoW17DRWBJwUDSga3-ieydW12w5K4/edit) Google Docs for the most up to date version.
+### Proposal
 
-Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Proposal.pdf).
+[Document](documentation/docs/Proposal.pdf)
 
-## Project  Requirements
+### Requirements
 
-See our [Requirements Document](https://docs.google.com/document/d/183tJPdbQjW1SCaJoEjVqWTh_mHdAAX0H52b6hTXzoHs/edit) Google Docs for the most up to date version.
+[Document](documentation/docs/Requirements.pdf)
 
-Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Requirements.pdf).
+[Presentation](documentation/presentations/Requirements.pdf)
 
-## Project Design
+[Presentation (pptx)](documentation/presentations/Requirements.pptx)
 
-See our [Design Document](https://docs.google.com/document/d/1cupP7yOYICyA_QUDTlE-oBpe0ZhrcVWDnqxv1n_v0fs/edit) Google Docs for the most up to date version.
+### Design
 
-Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Design.pdf).
+[Document](documentation/docs/Design.pdf)
 
-## Project Update
+[Presentation](documentation/presentations/Design.pdf)
 
-See our [Project Update](https://docs.google.com/document/d/1enHIvqHLjqsqgrAXx9qMaRhQO4M0gHAmen6SajhYSyI/edit) Google Docs for the most up to date version.
+[Presentation (pptx)](documentation/presentations/Design.pptx)
 
-Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Update.pdf).
+### Update
 
-## Project Final Report
+[Document](documentation/docs/Update.pdf)
 
-See our [Final Report](https://docs.google.com/document/d/1JO1SveC9G8qQIsc-aommGGQhEVvc7RRU_6azQfK_eN0/edit?usp=sharing) Google Docs for the most up to date version.
+[Presentation](documentation/presentations/Update.pdf)
 
-Alternatively, we include an archived PDF version of this file within this repo [here](documentation/Final_Report.pdf).
+[Presentation (pptx)](documentation/presentations/Update.pptx)
+
+### Final
+
+[Report](documentation/docs/Final_Report.pdf)
+
+[Presentation](documentation/presentations/Final_Presentation.pdf)
+
+[Presentation (pptx)](documentation/presentations/Final_Presentation.pptx)
 
 ## Service Design
 
