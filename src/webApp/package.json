@@ -1,6 +1,10 @@
 {
   "name": "reactjs",
   "version": "0.1.0",
+  "description": "Web Service for the YggFinance Web App",
+  "contributors": [
+    "Austin Kerr <akerr4@my.apsu.edu>"
+  ],
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
