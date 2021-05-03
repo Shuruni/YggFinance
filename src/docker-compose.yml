@@ -1,10 +1,10 @@
 version: "3.8"
 
 services:
-    tunneling-service:
-        image: shuruni/yggfinance_tunneling-service
-        build: ./tunnelingService
-        container_name: tunneling-service
+    tunneling-utility:
+        image: shuruni/yggfinance_tunneling-utility
+        build: ./tunnelingUtility
+        container_name: tunneling-utility
         environment:
             LT_SUBDOMAIN: ygg-dev
         networks: 
