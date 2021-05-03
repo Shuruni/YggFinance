@@ -1,7 +1,7 @@
 import { request } from "express";
 
 /**
- * Computes Future value, total contributions, and amout of interest earned for a given savings goal.
+ * Computes Future value, total contributions, and amount of interest earned for a given savings goal.
  * Uses compound interest formula for calculations
  *  
  * @param {{initialInvestment: number,avgRateOfReturn: number,monthlyContributions: number,planningMode: "boolean",timeFrame: number,savingsGoal: number}} requestBody 
@@ -13,16 +13,16 @@ import { request } from "express";
     let avgRate = requestBody.avgRateOfReturn;
     let monthlyContributions = requestBody.monthlyContributions;
     let timeFrame = requestBody.timeFrame;
-    //combines r/t for simpliying use in formulas, all calculations are monthly (12 periods)
+    //combines r/t for simplifying use in formulas, all calculations are monthly (12 periods)
     let rate = avgRate/12;  
    
     // calcs future value without contributions
     let futureValue = initialAmount * (1 + (rate)) ** (timeFrame * 12);    
    
-    // calcs contributions with return rate compunding
+    // calcs contributions with return rate compounding
     let contribWithInt = monthlyContributions * ((((1 + rate) ** (timeFrame * 12)) - 1)/rate); 
   
-    // Conpute outputs
+    // Compute outputs
     let endBalance = futureValue + contribWithInt;                           
    
     let totalContributed = initialAmount + (12 * timeFrame * monthlyContributions) 

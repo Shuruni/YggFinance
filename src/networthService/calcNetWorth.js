@@ -11,20 +11,20 @@ function calcNetWorth(requestBody) {
     let liabilities = requestBody.liabilities;
     
     // Hold the total sums of assets and liabilities
-    let totalAssets = new Number();
-    let totalLiabilites = new Number();
+    let totalAssets = 0;
+    let totalLiabilities = 0;
 
-    // Iterate through each networth item to calc total of assets and liabilites
+    // Iterate through each networth item to calc total of assets and liabilities
     for (const prop1 in assets){
         totalAssets += assets[prop1];
     }
 
     for (const prop2 in liabilities){
-        totalLiabilites += liabilities[prop2];
+        totalLiabilities += liabilities[prop2];
     }
 
     // perform assets - liabilities calc
-    let netWorth = (totalAssets - totalLiabilites);
+    let netWorth = (totalAssets - totalLiabilities);
     // return networth
     return netWorth;
 }

@@ -13,7 +13,6 @@ app.use(express.json()) // for parsing application/json
 app.post('/', function (req, res) {
     console.log(req.body)
 
-    // IMPLEMENT THIS FUNCTION YOURSELF in calcNetWorth.js
     let netWorth = calcNetWorth(req.body);
 
     res.json({
