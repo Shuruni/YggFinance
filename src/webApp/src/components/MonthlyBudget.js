@@ -6,6 +6,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import MonthlyBudgetMenu from './MonthlyBudgetMenu';
 import MBTable from './MBTable';
+import MBEditTrans from './MBEditTrans';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -36,25 +37,14 @@ export default function CenteredGrid() {
           </Button>
         </Grid>
       </Grid>
-      <Grid container direction="row" spacing={3}>
-        <Grid item xs={6}>
-          <Paper className={classes.paper}>
-            Transactions:
-          </Paper>
-          <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Merchant" variant="outlined" />
-          </Paper>
-          <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Spent (USD)" variant="outlined" />
-          </Paper>
-          <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Date (MM/DD/YYYY)" variant="outlined" />
-          </Paper>
+      <Grid container direction="column" spacing={3}>
+        <Grid item xs={12}>
           <Button variant="contained">
               Reconcile
           </Button>
+          <MBEditTrans/>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12}>
           <Paper className={classes.paper}>
             History:
           </Paper>

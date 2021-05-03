@@ -23,48 +23,48 @@ export default function CenteredGrid() {
       <Grid container spacing={3}>
         <Grid item xs={6}>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Automobile Value(s)" variant="outlined" />
+            <TextField id="outlined-full-width" label="Automobile Value(s)" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Checking Account Balance(s)" variant="outlined" />
+            <TextField id="outlined-full-width" label="Checking Account Balance(s)" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Savings Account Balance(s)" variant="outlined" />
+            <TextField id="outlined-full-width" label="Savings Account Balance(s)" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Real Estate Value" variant="outlined" />
+            <TextField id="outlined-full-width" label="Real Estate Value" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Retirement Funds" variant="outlined" />
+            <TextField id="outlined-full-width" label="Retirement Funds" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Other Assets" variant="outlined" />
+            <TextField id="outlined-full-width" label="Other Assets" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Total Assets" variant="outlined" InputProps={{ readOnly: true, }}/>
+            <TextField id="outlined-full-width" label="Total Assets" InputLabelProps={{ shrink: true, }} variant="outlined" InputProps={{ readOnly: true, }}/>
           </Paper>
         </Grid>
         <Grid item xs={6}>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Auto Loans" variant="outlined" />
+            <TextField id="outlined-full-width" label="Auto Loans" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Consumer Debt" variant="outlined" />
+            <TextField id="outlined-full-width" label="Consumer Debt" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Personal Loans" variant="outlined" />
+            <TextField id="outlined-full-width" label="Personal Loans" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Remaining Mortgage Balance" variant="outlined" />
+            <TextField id="outlined-full-width" label="Remaining Mortgage Balance" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Student Loans" variant="outlined" />
+            <TextField id="outlined-full-width" label="Student Loans" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Other Liabilities" variant="outlined" />
+            <TextField id="outlined-full-width" label="Other Liabilities" InputLabelProps={{ shrink: true, }} variant="outlined" />
           </Paper>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="Total Liabilities" variant="outlined" InputProps={{ readOnly: true, }}/>
+            <TextField id="outlined-full-width" label="Total Liabilities" variant="outlined" InputProps={{ readOnly: true, }} InputLabelProps={{ shrink: true, }}/>
           </Paper>
         </Grid>
         <Grid item xs={12} container direction="column" alignItems="center">
@@ -72,7 +72,7 @@ export default function CenteredGrid() {
               Calculate Net Worth
           </Button>
           <Paper className={classes.paper}>
-            <TextField id="outlined-basic" label="NetWorth" variant="outlined" InputProps={{ readOnly: true, }}/>
+            <TextField id="outlined-basic" label="NetWorth" variant="outlined" InputLabelProps={{ shrink: true, }} InputProps={{ readOnly: true, }}/>
           </Paper>
         </Grid>
       </Grid>
