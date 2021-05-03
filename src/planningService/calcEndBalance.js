@@ -13,8 +13,6 @@ import { request } from "express";
     let avgRate = requestBody.avgRateOfReturn;
     let monthlyContributions = requestBody.monthlyContributions;
     let timeFrame = requestBody.timeFrame;
-    let savingsGoal = requestBody.savingsGoal;
-    let planningMode = requestBody.planningMode;
     //combines r/t for simpliying use in formulas, all calculations are monthly (12 periods)
     let rate = avgRate/12;  
    

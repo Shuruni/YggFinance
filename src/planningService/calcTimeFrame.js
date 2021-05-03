@@ -34,14 +34,12 @@ function calcTimeFrame(requestBody, responseBody) {
    let totalInterest = endBalance - totalContributed;   
 
 
-
-
     // Write the results to the responseBody
-    responseBody.endBalance = 0;
-    responseBody.timeFrame = 0;
-    responseBody.startingAmount = 0;
-    responseBody.totalContributions = 0;
-    responseBody.totalInterest = 0;
+    responseBody.endBalance = endBalance;
+    responseBody.timeFrame = timeFrame;
+    responseBody.startingAmount = initialInvestment;
+    responseBody.totalContributions = totalContributed;
+    responseBody.totalInterest = totalInterest;
 }
 
 export default calcTimeFrame;
