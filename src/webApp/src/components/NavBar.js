@@ -106,16 +106,16 @@ function NavTabs() {
           </Typography>
           <Typography variant="body1" display="block" gutterbottom>
               The Savings Planner tab will give you access to our Savings Planning function. This
-              function has two selectable planning modes: Time Frame and Savings Goal. While in Time Frame
+              function has two selectable planning modes: Contributions and Savings Goal. While in Contributions
               mode, the planner will ask you for an input of an initial investment, average rate of return
-              on the investment, expected monthly contributions to the investment, and how many years you
+              on the investment, your expected final savings goal, and how many years you
               expect to let your investment grow. Below these fillable text boxes will be a button to calculate
               results. To the right of your entries, you will be able to view the calculated results and data
               including your savings ending balance, the time frame of saving, the amount you started with, the
-              total amount of contributions added to the investment, and total interest made on the investment.
+              amount of contributions needed monthly, and total interest made on the investment.
               If the selectable slider button is engaged, the Savings Planner will change to Savings Goal mode.
-              Inputs and outputs are similar, but this page asks for an amount of savings you wish to reach instead
-              of a planned length of time to save. The time frame output on this mode will let you know how long it
+              Inputs and outputs are similar, but this page solves for an amount of savings you wish to reach instead
+              of a planned amount to give each month. The time frame output on this mode will let you know how long it
               will take to reach your specified savings goal with your specific conditions that were applied.
           </Typography>
           <Typography variant="body1" display="block" gutterbottom>
