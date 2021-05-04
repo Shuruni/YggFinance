@@ -7,10 +7,10 @@
  */
 function calcTimeFrame(requestBody, responseBody) {
     // Read the contents of the requestBody
-    let initialInvestment = requestBody.initialInvestment;
-    let avgRate = requestBody.avgRateOfReturn;
-    let monthlyContributions = requestBody.monthlyContributions;
-    let finalAmount = requestBody.savingsGoal;
+    let initialInvestment = parseFloat(requestBody.initialInvestment);
+    let avgRate = parseFloat(requestBody.avgRateOfReturn);
+    let monthlyContributions = parseFloat(requestBody.monthlyContributions);
+    let finalAmount = parseFloat(requestBody.savingsGoal);
 
     // TO BE IMPLEMENTED ;)
     //Compound interest formula t = ln(A/P) / n[ln(1 + r/n)]
@@ -18,7 +18,7 @@ function calcTimeFrame(requestBody, responseBody) {
     //combines r/t for simplifying use in formulas, all calculations are monthly (12 periods)
    let rate = avgRate/12;  
    
-   let timeFrame = Math.log(finalAmount / initialInvestment) / (12 * (Math.log(1 + (rate))));
+   let timeFrame = Math.ceil(Math.log(finalAmount / initialInvestment) / (12 * (Math.log(1 + (rate)))));
 
    // calcs future value without contributions
    let futureValue = initialInvestment * (1 + (rate)) ** (timeFrame * 12);    
@@ -29,7 +29,7 @@ function calcTimeFrame(requestBody, responseBody) {
    // Compute outputs
    let endBalance = futureValue + contribWithInt;                           
   
-   let totalContributed = initialAmount + (12 * timeFrame * monthlyContributions) 
+   let totalContributed = initialInvestment + (12 * timeFrame * monthlyContributions) 
  
    let totalInterest = endBalance - totalContributed;   
 

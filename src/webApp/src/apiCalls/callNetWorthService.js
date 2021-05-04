@@ -8,12 +8,12 @@ import axios from "axios";
  */
 async function callNetWorthService(assets, liabilities) {
     const response = await axios.post(
-        'https://ygg-dev.loca.lt/networth-service',
+        'https://ygg-dev-1.loca.lt/networth-service',
         { 
             assets: assets,
             liabilities: liabilities
         },
-        { headers: { 'Content-Type': 'application/json' } }
+        { headers: { 'Content-Type': 'application/json', 'Bypass-Tunnel-Reminder': true } }
     )
     console.log(response.data);
     return response.data.netWorth;

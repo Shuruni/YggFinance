@@ -6,7 +6,7 @@ services:
         build: ./tunnelingUtility
         container_name: tunneling-utility
         environment:
-            LT_SUBDOMAIN: ygg-dev
+            LT_SUBDOMAIN: ygg-dev-1
         networks: 
             - reverse-proxy-network
     reverse-proxy:

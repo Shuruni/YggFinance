@@ -9,19 +9,21 @@ import { request } from "express";
  */
  function calcEndBalance(requestBody, responseBody) {
     // Read the contents of the requestBody
-    let initialAmount = requestBody.initialInvestment;
-    let avgRate = requestBody.avgRateOfReturn;
-    let monthlyContributions = requestBody.monthlyContributions;
-    let timeFrame = requestBody.timeFrame;
+    let initialAmount = parseFloat(requestBody.initialInvestment);
+    let avgRate = parseFloat(requestBody.avgRateOfReturn);
+    let monthlyContributions = parseFloat(requestBody.monthlyContributions);
+    let timeFrame = parseInt(requestBody.timeFrame);
     //combines r/t for simplifying use in formulas, all calculations are monthly (12 periods)
     let rate = avgRate/12;  
+
+    let effectiveInterest = ((1 + (rate)) ** (timeFrame * 12))
    
     // calcs future value without contributions
-    let futureValue = initialAmount * (1 + (rate)) ** (timeFrame * 12);    
+    let futureValue = initialAmount * effectiveInterest;    
    
     // calcs contributions with return rate compounding
-    let contribWithInt = monthlyContributions * ((((1 + rate) ** (timeFrame * 12)) - 1)/rate); 
-  
+    let contribWithInt = monthlyContributions * ((effectiveInterest - 1)/rate); 
+
     // Compute outputs
     let endBalance = futureValue + contribWithInt;                           
    

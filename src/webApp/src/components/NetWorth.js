@@ -90,9 +90,10 @@ class NetWorthPage extends Component {
     console.log("The Button Was Clicked");
 
     callNetWorthService(this.state.assets, this.state.liabilities).then((netWorth) => {
-      this.setState({netWorth:netWorth});
-      console.log(this.state);
-      localStorage.setItem("NetWorthPage", JSON.stringify(this.state));
+      this.setState({netWorth:netWorth}, () => {
+        console.log(this.state);
+        localStorage.setItem("NetWorthPage", JSON.stringify(this.state));
+      });
     });
     
   }
