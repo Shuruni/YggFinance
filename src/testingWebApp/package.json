@@ -1,0 +1,16 @@
+{
+  "name": "testing-stuff",
+  "version": "1.0.0",
+  "description": "Testing stuff YggFinance Web App",
+  "contributors": [
+    "Alan Holman <aholman7@my.apsu.edu>"
+  ],
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "type": "module"
+}
