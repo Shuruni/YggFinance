@@ -12,18 +12,16 @@ function calcMonthlyContributions(requestBody, responseBody) {
     let timeFrame = parseInt(requestBody.timeFrame);
     let finalAmount = parseFloat(requestBody.savingsGoal);
 
-    //Compound interest formula t = ln(A/P) / n[ln(1 + r/n)]
    
     //combines r/t for simplifying use in formulas, all calculations are monthly (12 periods)
    let rate = avgRate/12;  
-   let rateConst = 1 + rate;
    let effectiveInterest = ((1 + (rate)) ** (timeFrame * 12));
    
    let monthlyContributions = finalAmount/(effectiveInterest/rate);
 
  
    // Compute outputs
-   let endBalance = futureValue + contribWithInt;                           
+   let endBalance = finalAmount;                           
   
    let totalContributed = initialInvestment + (12 * timeFrame * monthlyContributions) 
  
