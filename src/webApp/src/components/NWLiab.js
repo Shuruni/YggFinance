@@ -1,9 +1,9 @@
-import React from 'react';
-import Paper from '@material-ui/core/Paper';
+import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import { withStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = theme => ({
     root: {
       flexGrow: 1,
     },
@@ -12,36 +12,85 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       color: theme.palette.text.secondary,
     },
-  }));
-  
-export default function CenteredGrid() {
-const classes = useStyles();
+});
 
-    return (
-        <form className={classes.root} noValidate autoComplete="off">
+class liabilities extends Component {
+    constructor(props) {
+        super(props);
+        this.handleInputChange = this.handleInputChange.bind(this);
+    }
+
+    handleInputChange = (event) => {
+        this.props.onInputChange(event);
+    }
+    
+    render () {
+        const { classes } = this.props;
+        return (
             <div>
                 <Paper className={classes.paper}>
-                    <TextField id="outlined-full-width" label="Auto Loans" InputLabelProps={{ shrink: true, }} variant="outlined" />
+                    <TextField
+                        label="Auto Loans:"
+                        id="outlined-full-width"
+                        name="autoLoans"
+                        type="number"
+                        variant="outlined"
+                        defaultValue={this.props.autoLoans}
+                        onChange={this.handleInputChange} />
                 </Paper>
                 <Paper className={classes.paper}>
-                    <TextField id="outlined-full-width" label="Consumer Debt" InputLabelProps={{ shrink: true, }} variant="outlined" />
+                    <TextField
+                        label="Consumer Debt:"
+                        id="outlined-full-width"
+                        name="consumerDebt"
+                        type="number"
+                        variant="outlined"
+                        defaultValue={this.props.consumerDebt}
+                        onChange={this.handleInputChange} />
                 </Paper>
                 <Paper className={classes.paper}>
-                    <TextField id="outlined-full-width" label="Personal Loans" InputLabelProps={{ shrink: true, }} variant="outlined" />
+                    <TextField
+                        label="Personal Loans:"
+                        id="outlined-full-width"
+                        name="personalLoans"
+                        type="number"
+                        variant="outlined"
+                        defaultValue={this.props.personalLoans}
+                        onChange={this.handleInputChange} />
                 </Paper>
                 <Paper className={classes.paper}>
-                    <TextField id="outlined-full-width" label="Remaining Mortgage Balance" InputLabelProps={{ shrink: true, }} variant="outlined" />
+                    <TextField
+                        label="Remaining Mortgage Balance:"
+                        id="outlined-full-width"
+                        name="remainingMortgageBalance"
+                        type="number"
+                        variant="outlined"
+                        defaultValue={this.props.remainingMortgageBalance}
+                        onChange={this.handleInputChange} />
                 </Paper>
                 <Paper className={classes.paper}>
-                    <TextField id="outlined-full-width" label="Student Loans" InputLabelProps={{ shrink: true, }} variant="outlined" />
+                    <TextField
+                        label="Student Loans:"
+                        id="outlined-full-width"
+                        name="studentLoans"
+                        type="number"
+                        variant="outlined"
+                        defaultValue={this.props.studentLoans}
+                        onChange={this.handleInputChange} />
                 </Paper>
                 <Paper className={classes.paper}>
-                    <TextField id="outlined-full-width" label="Other Liabilities" InputLabelProps={{ shrink: true, }} variant="outlined" />
-                </Paper>
-                <Paper className={classes.paper}>
-                    <TextField id="outlined-full-width" label="Total Liabilities" variant="outlined" InputProps={{ readOnly: true, }} InputLabelProps={{ shrink: true, }}/>
+                    <TextField
+                        label="Other Liabilities:"
+                        id="outlined-full-width"
+                        name="other"
+                        type="number"
+                        variant="outlined"
+                        defaultValue={this.props.other}
+                        onChange={this.handleInputChange} />
                 </Paper>
             </div>
-        </form>
-    );
+        )
+    }
 }
+
+export default withStyles(useStyles)(liabilities);

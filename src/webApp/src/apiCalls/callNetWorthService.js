@@ -8,14 +8,15 @@ import axios from "axios";
  */
 async function callNetWorthService(assets, liabilities) {
     const response = await axios.post(
-        'https://yggfinance.loca.lt/networth-service',
+        'https://ygg-dev.loca.lt/networth-service',
         { 
             assets: assets,
             liabilities: liabilities
         },
         { headers: { 'Content-Type': 'application/json' } }
     )
-    return response.data;
+    console.log(response.data);
+    return response.data.netWorth;
 }
 
 export default callNetWorthService;

@@ -16,11 +16,11 @@ function calcNetWorth(requestBody) {
 
     // Iterate through each networth item to calc total of assets and liabilities
     for (const prop1 in assets){
-        totalAssets += assets[prop1];
+        totalAssets += parseInt(assets[prop1],10);
     }
 
     for (const prop2 in liabilities){
-        totalLiabilities += liabilities[prop2];
+        totalLiabilities += parseInt(liabilities[prop2],10);
     }
 
     // perform assets - liabilities calc
