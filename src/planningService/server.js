@@ -1,6 +1,6 @@
 'use strict';
 
-import calcTimeFrame from "./calcTimeFrame.js";
+import calcMonthlyContributions from "./calcMonthlyContibutions.js";
 import calcEndBalance from "./calcEndBalance.js";
 import express from "express";
 
@@ -17,6 +17,7 @@ app.post('/', function (req, res) {
     let responseBody = {
       endBalance: NaN,
       timeFrame: NaN,
+      monthlyContributions: NaN,
       startingAmount: NaN,
       totalContributions: NaN,
       totalInterest: NaN
@@ -25,7 +26,7 @@ app.post('/', function (req, res) {
     switch(req.body.planningMode) {
       case 0:
         console.log("Executing Time Frame Mode Function...");
-        calcTimeFrame(req.body, responseBody);
+        calcMonthlyContributions(req.body, responseBody);
         break;
       case 1:
         console.log("Executing Savings Goal Mode Function...");
