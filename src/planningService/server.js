@@ -25,16 +25,15 @@ app.post('/', function (req, res) {
     switch(req.body.planningMode) {
       case 0:
         console.log("Executing Time Frame Mode Function...");
-        // IMPLEMENT THIS FUNCTION YOURSELF in calcTimeFrame.js
         calcTimeFrame(req.body, responseBody);
         break;
       case 1:
         console.log("Executing Savings Goal Mode Function...");
-        // IMPLEMENT THIS FUNCTION YOURSELF in calcEndBalance.js
         calcEndBalance(req.body, responseBody);
         break;
       default:
         console.log("Invalid planningMode received: " + req.body.planningMode);
+        break;
     }
 
     res.json(responseBody);
