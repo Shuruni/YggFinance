@@ -35,6 +35,7 @@ import { request } from "express";
     // Write the results to the responseBody
     responseBody.endBalance = endBalance;
     responseBody.timeFrame = timeFrame;
+    requestBody.monthlyContributions = monthlyContributions;
     responseBody.startingAmount = initialAmount;
     responseBody.totalContributions = totalContributed;
     responseBody.totalInterest = totalInterest;
