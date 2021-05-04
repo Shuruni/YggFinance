@@ -140,7 +140,7 @@ class SavingsPlannerPage extends Component {
           <div className={classes.switchContent}>
           <FormControl component="fieldset">
             <FormGroup aria-label="position" row>
-              Project Time Frame
+              Project Contributions
               <Switch 
                 color="primary"
                 name="planningMode"

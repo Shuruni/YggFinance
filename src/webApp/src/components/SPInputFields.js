@@ -48,17 +48,6 @@ class SavingsPlannerInputFields extends Component {
                     onChange={this.handleInputChange}
                 />
                 <TextField 
-                    className={classes.textField}
-                    label="Monthly Contributions (USD)" 
-                    id="outlined-basic" 
-                    name="monthlyContributions"
-                    type="number"
-                    variant="outlined"
-                    defaultValue={this.props.monthlyContributions}
-                    onChange={this.handleInputChange}
-                />
-                <div hidden={planningMode === 0} >
-                    <TextField 
                         className={classes.textField}
                         label="Years to Grow"
                         id="outlined-basic" 
@@ -66,6 +55,17 @@ class SavingsPlannerInputFields extends Component {
                         type="number"
                         variant="outlined"
                         defaultValue={this.props.timeFrame}
+                        onChange={this.handleInputChange}
+                />
+                <div hidden={planningMode === 0} >
+                    <TextField 
+                        className={classes.textField}
+                        label="Monthly Contributions (USD)" 
+                        id="outlined-basic" 
+                        name="monthlyContributions"
+                        type="number"
+                        variant="outlined"
+                        defaultValue={this.props.monthlyContributions}
                         onChange={this.handleInputChange}
                     />
                 </div>
