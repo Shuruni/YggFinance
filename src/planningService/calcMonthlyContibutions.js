@@ -17,7 +17,7 @@ function calcMonthlyContributions(requestBody, responseBody) {
    let rate = avgRate/12;  
    let effectiveInterest = ((1 + (rate)) ** (timeFrame * 12));
    
-   let monthlyContributions = finalAmount/(effectiveInterest/rate);
+   let monthlyContributions = (finalAmount-initialInvestment)/((effectiveInterest-1)/rate);
 
  
    // Compute outputs
