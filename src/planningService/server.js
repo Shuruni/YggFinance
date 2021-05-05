@@ -25,7 +25,7 @@ app.post('/', function (req, res) {
 
     switch(req.body.planningMode) {
       case 0:
-        console.log("Executing Time Frame Mode Function...");
+        console.log("Executing Monthly rew contributions Mode Function...");
         calcMonthlyContributions(req.body, responseBody);
         break;
       case 1:
