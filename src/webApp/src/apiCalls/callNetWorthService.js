@@ -8,7 +8,7 @@ import axios from "axios";
  */
 async function callNetWorthService(assets, liabilities) {
     const response = await axios.post(
-        'https://ygg-dev-1.loca.lt/networth-service',
+        'https://yggfinance.loca.lt/networth-service',
         { 
             assets: assets,
             liabilities: liabilities

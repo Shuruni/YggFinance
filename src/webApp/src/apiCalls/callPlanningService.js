@@ -7,7 +7,7 @@ import axios from "axios";
  */
 async function callPlanningService(requestBody) {
     const response = await axios.post(
-        'https://ygg-dev-1.loca.lt/planning-service',
+        'https://yggfinance.loca.lt/planning-service',
         requestBody,
         { headers: { 'Content-Type': 'application/json', 'Bypass-Tunnel-Reminder': true } }
     )
