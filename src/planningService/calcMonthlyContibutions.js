@@ -31,7 +31,7 @@ function calcMonthlyContributions(requestBody, responseBody) {
     // Write the results to the responseBody
     responseBody.endBalance = endBalance;
     responseBody.timeFrame = timeFrame;
-    requestBody.monthlyContributions = monthlyContributions;
+    responseBody.monthlyContributions = monthlyContributions;
     responseBody.startingAmount = initialInvestment;
     responseBody.totalContributions = totalContributed;
     responseBody.totalInterest = totalInterest;
